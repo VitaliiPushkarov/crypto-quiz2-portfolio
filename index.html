@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crypto Cluster</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="slider">
+
+    <div class="status-bar">
+        <div class="progress"></div>
+    </div>
+        <div class="slide active bg-img" id="slide1">
+            <div class="center-align">
+                <div class="all-text-wrapper">
+                    <p class="paragraph-big ct-animate-blink">Узнайте свои возможности в криптовалютах!</p>
+                    <p class="paragraph">Пройдите короткий опрос и получите доступ к бесплатному обучению по инвестированию и трейдингу криптовалютами. </p>
+                    <button class="start-quiz is-blicked" onclick="nextSlide('slide2')">
+                        Старт</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide2">
+            <div class="slide-wrapper">
+                <h2>Как вы впервые узнали о криптовалютах?</h2>
+            <div class="quiz-tag">
+                <span class="quiz-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#15e8b5"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Z"/></svg>
+                </span>
+                <span class="quiz-text">выберите один вариант</span>
+            </div>
+            </div>
+            <ul>
+                <li><button onclick="nextSlide('slide3')" class="button-answer">Из новостей</button></li>
+                <li><button onclick="nextSlide('slide3')" class="button-answer">От друзей или семьи</button></li>
+                <li><button onclick="nextSlide('slide3')" class="button-answer">Через социальные сети</button></li>
+                <li><button onclick="nextSlide('slide3')" class="button-answer">Другой источник</button></li>
+            </ul>
+        </div>
+        <div class="slide" id="slide3">
+            <div class="slide-wrapper">
+                <h2>Какую цель вы преследуете, инвестируя в криптовалюты?</h2>
+            <div class="quiz-tag">
+                <span class="quiz-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#15e8b5"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Z"/></svg>
+                </span>
+                <span class="quiz-text">выберите один вариант</span>
+            </div>
+            </div>
+            <ul>
+                <li><button onclick="nextSlide('slide4')" class="button-answer">Долгосрочные инвестиции</button></li>
+                <li><button onclick="nextSlide('slide4')" class="button-answer">Краткосрочные прибыли</button></li>
+                <li><button onclick="nextSlide('slide4')" class="button-answer">Диверсификация портфеля</button></li>
+                <li><button onclick="nextSlide('slide4')" class="button-answer">Интерес к новым технологиям</button></li>
+            </ul>
+        </div>
+        <div class="slide" id="slide4">
+            <div class="slide-wrapper">
+                <h2>Какие факторы вы учитываете при выборе криптовалют для инвестиций?</h2>
+            <div class="quiz-tag">
+                <span class="quiz-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#15e8b5"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Z"/></svg>
+                </span>
+                <span class="quiz-text">выберите один вариант</span>
+            </div>
+            </div>
+            <ul>
+                <li><button onclick="nextSlide('slide5')" class="button-answer">Рыночная капитализация</button></li>
+                <li><button onclick="nextSlide('slide5')" class="button-answer">Технологические особенности</button></li>
+                <li><button onclick="nextSlide('slide5')" class="button-answer">Поддержка сообщества</button></li>
+                <li><button onclick="nextSlide('slide5')" class="button-answer">Другие факторы
+                </button></li>
+            </ul>
+        </div>
+        <div class="slide" id="slide5">
+            <div class="slide-wrapper">
+                <h2>Сколько времени в неделю вы уделяете трейдингу криптовалютами?</h2>
+            <div class="quiz-tag">
+                <span class="quiz-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#15e8b5"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Z"/></svg>
+                </span>
+                <span class="quiz-text">выберите один вариант</span>
+            </div>
+            </div>
+            <ul>
+                <li><button onclick="nextSlide('slide6')" class="button-answer">Менее 1 часа
+                </button></li>
+                <li><button onclick="nextSlide('slide6')" class="button-answer">От 1 до 5 часов</button></li>
+                <li><button onclick="nextSlide('slide6')" class="button-answer">От 5 до 10 часов</button></li>
+                <li><button onclick="nextSlide('slide6')" class="button-answer">Более 10 часов</button></li>
+            </ul>
+        </div>
+        <div class="slide" id="slide6">
+            <div class="slide-wrapper">
+                <h2>Что вас больше всего привлекает в криптовалютных инвестициях?</h2>
+            <div class="quiz-tag">
+                <span class="quiz-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#15e8b5"><path d="M422-297.33 704.67-580l-49.34-48.67L422-395.33l-118-118-48.67 48.66L422-297.33ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-83 31.5-156t85.83-127q54.34-54 127.34-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82.33-31.5 155.33-31.5 73-85.5 127.34Q709-143 636-111.5T480-80Z"/></svg>
+                </span>
+                <span class="quiz-text">выберите один вариант</span>
+            </div>
+            </div>
+            <ul>
+                <li><button onclick="nextSlide('slide7')" class="button-answer">Возможность высокой прибыли</button></li>
+                <li><button onclick="nextSlide('slide7')" class="button-answer">Технологические инновации</button></li>
+                <li><button onclick="nextSlide('slide7')" class="button-answer">Независимость от традиционных финансовых институтов</button></li>
+                <li><button onclick="nextSlide('slide7')" class="button-answer">Анонимность и децентрализация</button></li>
+            </ul>
+        </div>
+        <div class="slide" id="slide7">
+                <div class="result-container">
+                    <div class="form-container">
+                        <div class="title-wrapper"><h3>Спасибо за участие!</h3>
+                            <p class="paragraph">Заполните форму для получения доступа к эксклюзивному обучению по криптовалютам:</p></div>
+                        <form id="quizForm" onsubmit="return validateForm(event)">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone">
+                            <button type="submit" class="form-button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-item">
+                <h3>The Crypto Cluster
+                </h3>
+            </div>
+            <div class="footer-item">
+                <h4>Контакты</h4>
+                <div class="footer-contacts-wrapper">
+                    <a href="https://maps.app.goo.gl/1NGUC6GNwAKM3zgj6" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M120-120v-556.67h163.33V-840h393.34v326.67H840V-120H528.67v-163.33h-97.34V-120H120Zm66.67-66.67h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Zm0-163.33h96.66V-610h-96.66v96.67ZM350-350h96.67v-96.67H350V-350Zm0-163.33h96.67V-610H350v96.67Zm0-163.34h96.67v-96.66H350v96.66ZM513.33-350H610v-96.67h-96.67V-350Zm0-163.33H610V-610h-96.67v96.67Zm0-163.34H610v-96.66h-96.67v96.66Zm163.34 490h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Z"/></svg>
+                        Av. Diagonal, 539, Les Corts, 08006 Barcelona, Испания
+                    </a>
+                    <a href="tel:+34932692697" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M266.67-40q-27 0-46.84-19.83Q200-79.67 200-106.67v-746.66q0-27 19.83-46.84Q239.67-920 266.67-920h426.66q27 0 46.84 19.83Q760-880.33 760-853.33v746.66q0 27-19.83 46.84Q720.33-40 693.33-40H266.67Zm0-100v33.33h426.66V-140H266.67Zm0-66.67h426.66v-546.66H266.67v546.66Zm0-613.33h426.66v-33.33H266.67V-820Zm0 0v-33.33V-820Zm0 680v33.33V-140Z"/></svg>
+                        +34932692697
+                    </a>
+                    <a href="mailto:info@thecryptocluster.com" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v54.67q0 57-39.73 96.5t-97.6 39.5q-35.72 0-67.36-16.67t-49.98-47.33q-27 32.33-65.22 48.16-38.22 15.84-80.11 15.84-79.4 0-135.37-55.5-55.96-55.5-55.96-135.18t55.96-135.83Q400.6-672 480-672t135.37 56.16q55.96 56.16 55.96 135.84v54.67q0 29.07 20.67 49.2Q712.67-356 742.33-356q29.67 0 50.34-20.13 20.66-20.13 20.66-49.2V-480q0-139.58-96.87-236.46-96.88-96.87-236.46-96.87t-236.46 96.87Q146.67-619.58 146.67-480t96.87 236.46q96.88 96.87 236.46 96.87h209.33V-80H480Zm.04-276q51.96 0 88.29-36.17 36.34-36.16 36.34-87.83 0-52.67-36.38-89-36.37-36.33-88.33-36.33T391.67-569q-36.34 36.33-36.34 89 0 51.67 36.38 87.83Q428.08-356 480.04-356Z"/></svg>
+                        info@thecryptocluster.com</a>
+                </div>
+            </div>
+            <div class="footer-item">
+                    <h4>Навигация</h4>
+                    <a href="privacy.html" class="footer-link">Политика Конфиденциальности</a>
+                    <a href="terms.html" class="footer-link">Условия Пользования</a>
+            </div>
+            <div class="footer-item">
+                    <h4>Важное уведомление:</h4>
+                    <p>Инвестирование всегда сопряжено с рисками, включая вероятность полной потери вложенных средств. Не каждый может быть готов к таким рискам. Мы настоятельно рекомендуем принимать финансовые решения с особой осторожностью и полностью осознавать все возможные риски. Важно понимать, что любые инвестиции могут привести к утрате капитала. Доступ к нашему сайту и его использование разрешены только лицам старше 18 лет. Используя наш сайт, вы соглашаетесь с условиями нашей Политики конфиденциальности.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookies-banner">
+          <div class="text-x">
+            <p class="text-banner">Мы используем файлы cookie, чтобы улучшить ваш опыт. Если вы продолжите посещать этот сайт, вы соглашаетесь на использование файлов cookie.</p>
+            <div id="decline" class="decline"><img src="img/close_24dp_FILL0_wght400_GRAD0_opsz24.png" alt class="x-icon"></div>
+          </div>
+          <button id="accept-cookies" class="cookie-button w-button">Принять</button>
+        </div>
+      </div> 
+    <script src="js/main.js"></script>
+</body>
+</html>
